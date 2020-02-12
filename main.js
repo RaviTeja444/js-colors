@@ -22,3 +22,10 @@ updateColor()
 function alertfunction(){
   alert("hello");
 }
+
+function colorChange(){
+  const r = parseInt(document.querySelector('#red').value)
+  const g = parseInt(document.querySelector('#green').value)
+  const b = parseInt(document.querySelector('#blue').value)
+  document.getElementById('value').value= `${r},${g},${b}`;
+}
